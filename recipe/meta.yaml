@@ -10,19 +10,19 @@ source:
 
 build:
   number: 1
-  skip: true  # [osx or win]
+  skip: true  # [osx]
 
 requirements:
   run:
     - cuda-cudart-dev 12.0.107
     - cuda-cccl 12.0.90
     - cuda-profiler-api 12.0.76
-    - cuda-driver-dev 12.0.107
+    - cuda-driver-dev 12.0.107  # [linux]
     - cuda-nvrtc-dev 12.0.76
-    - cuda-opencl-dev 12.0.76  # [linux64 or win]
+    - cuda-opencl-dev 12.0.76   # [linux64 or win]
     - libcublas-dev 12.0.1.189
     - libcufft-dev 11.0.0.21
-    - libcufile-dev 1.5.0.59  # [linux64]
+    - libcufile-dev 1.5.0.59    # [linux64]
     - libcurand-dev 10.3.1.50
     - libcusolver-dev 11.4.2.57
     - libcusparse-dev 12.0.0.76
