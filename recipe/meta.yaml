@@ -1,4 +1,4 @@
-{% set version = "12.2.2" %}
+{% set version = "12.3.2" %}
 
 package:
   name: cuda-libraries-dev
@@ -14,21 +14,21 @@ build:
 
 requirements:
   run:
-    - cuda-cudart-dev 12.2.140
-    - cuda-cccl 12.2.140
-    - cuda-profiler-api 12.2.140
-    - cuda-driver-dev 12.2.140  # [linux]
-    - cuda-nvrtc-dev 12.2.140
-    - cuda-opencl-dev 12.2.140   # [linux64 or win]
-    - libcublas-dev 12.2.5.6
-    - libcufft-dev 11.0.8.103
-    - libcufile-dev 1.7.2.10    # [linux64 or aarch64]
-    - libcurand-dev 10.3.3.141
-    - libcusolver-dev 11.5.2.141
-    - libcusparse-dev 12.1.2.141
-    - libnpp-dev 12.2.1.4
-    - libnvjitlink-dev 12.2.140
-    - libnvjpeg-dev 12.2.2.4
+    - cuda-cudart-dev 12.3.101
+    - cuda-cccl 12.3.101
+    - cuda-profiler-api 12.3.101
+    - cuda-driver-dev 12.3.101    # [linux]
+    - cuda-nvrtc-dev 12.3.107
+    - cuda-opencl-dev 12.3.101    # [linux64 or win]
+    - libcublas-dev 12.3.4.1
+    - libcufft-dev 11.0.12.1
+    - libcufile-dev 1.8.1.2       # [linux64 or aarch64]
+    - libcurand-dev 10.3.4.107
+    - libcusolver-dev 11.5.4.101
+    - libcusparse-dev 12.2.0.103
+    - libnpp-dev 12.2.3.2
+    - libnvjitlink-dev 12.3.101
+    - libnvjpeg-dev 12.3.0.81
 
 test:
   commands:
