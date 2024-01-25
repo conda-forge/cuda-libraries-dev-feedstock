@@ -17,12 +17,12 @@ requirements:
     - cuda-cudart-dev 12.3.101
     - cuda-cccl 12.3.101
     - cuda-profiler-api 12.3.101
-    - cuda-driver-dev 12.3.101  # [linux]
+    - cuda-driver-dev 12.3.101    # [linux]
     - cuda-nvrtc-dev 12.3.107
-    - cuda-opencl-dev 12.3.101   # [linux64 or win]
+    - cuda-opencl-dev 12.3.101    # [linux64 or win]
     - libcublas-dev 12.3.4.1
     - libcufft-dev 11.0.12.1
-    - libcufile-dev 1.8.1.2    # [linux64 or aarch64]
+    - libcufile-dev 1.8.1.2       # [linux64 or aarch64]
     - libcurand-dev 10.3.4.107
     - libcusolver-dev 11.5.4.101
     - libcusparse-dev 12.2.0.103
