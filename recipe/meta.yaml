@@ -1,4 +1,4 @@
-{% set version = "13.1.1" %}
+{% set version = "13.2.0" %}
 
 package:
   name: cuda-libraries-dev
@@ -9,28 +9,29 @@ source:
   sha256: e2c71babfd18a8e69542dd7e9ca018f9caa438094001a58e6bc4d8c999bf0d07
 
 build:
-  number: 1
+  number: 0
   skip: true  # [osx or ppc64le]
 
 requirements:
   run:
-    - cuda-cudart-dev 13.1.80
-    - cuda-cccl_{{ target_platform }} 13.1.115
-    - cuda-profiler-api 13.1.115
-    - cuda-driver-dev 13.1.80    # [linux]
-    - cuda-nvrtc-dev 13.1.115
-    - cuda-opencl-dev 13.1.115    # [linux64 or win]
-    - libcublas-dev 13.2.1.1
-    - libcufft-dev 12.1.0.78
-    - libcufile-dev 1.16.1.26       # [linux]
-    - libcuobjclient-dev 1.0.0.26  # [linux64 or aarch64]
-    - libcurand-dev 10.4.1.81
-    - libcusolver-dev 12.0.9.81
-    - libcusparse-dev 12.7.3.1
-    - libnpp-dev 13.0.3.3
-    - libnvfatbin-dev 13.1.115
-    - libnvjitlink-dev 13.1.115
-    - libnvjpeg-dev 13.0.3.75
+    - cuda-cudart-dev 13.2.51
+    - cuda-cccl_{{ target_platform }} 13.2.27
+    - cuda-profiler-api 13.2.20
+    - cuda-driver-dev 13.2.51    # [linux]
+    - cuda-nvrtc-dev 13.2.51
+    - cuda-opencl-dev 13.2.51    # [linux64 or win]
+    - libcublas-dev 13.3.0.5
+    - libcudla-dev 13.3.0.5      # [linux64 or aarch64]
+    - libcufft-dev 12.2.0.37
+    - libcufile-dev 1.17.0.44       # [linux]
+    - libcuobjclient-dev 1.1.0.44  # [linux64 or aarch64]
+    - libcurand-dev 10.4.2.51
+    - libcusolver-dev 12.1.0.51
+    - libcusparse-dev 12.7.9.17
+    - libnpp-dev 13.1.0.44
+    - libnvfatbin-dev 13.2.51
+    - libnvjitlink-dev 13.2.51
+    - libnvjpeg-dev 13.0.4.44
 
 test:
   commands:
