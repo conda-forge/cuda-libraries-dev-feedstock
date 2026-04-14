@@ -1,4 +1,4 @@
-{% set version = "13.0.2" %}
+{% set version = "13.0.3" %}
 
 package:
   name: cuda-libraries-dev
@@ -20,7 +20,7 @@ requirements:
     - cuda-driver-dev 13.0.96    # [linux]
     - cuda-nvrtc-dev 13.0.88
     - cuda-opencl-dev 13.0.85    # [linux64 or win]
-    - libcublas-dev 13.1.0.3
+    - libcublas-dev 13.1.1.3
     - libcufft-dev 12.0.0.61
     - libcufile-dev 1.15.1.6       # [linux]
     - libcurand-dev 10.4.0.35
